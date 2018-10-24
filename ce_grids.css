@@ -1,0 +1,85 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 2
+   
+   Style Sheet for Grids used in the Costume Expressions Front Page
+   Author: Connor J Webdale
+   Date: 10.24.18
+   
+   Filename: ce_grids.css
+
+*/
+
+
+/* Grid Rows Styles */
+/*Set each div element of the row class to 100% of its container. Displaying only when clear of floats. */
+div.row {
+    width: 100%;
+    clear: both;
+}
+
+/*Allows grids to expand around all of their floated content. */
+div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* Grid Columns Styles */
+/*Floats every div element whose class begins with column to the left. */
+div[class^="column"] {
+    float: left;
+}
+
+/*Create style for div elements with the class "column##", where ## is the percent value of the columns width. */
+div.column100 {
+    width: 100%;
+}
+
+div.column50 {
+    width: 50%
+}
+
+div.column33 {
+    width: 33%;
+}
+
+div.column67 {
+    width: 67%;
+}
+
+div.column25 {
+    width: 25%;
+}
+
+div.column75 {
+    width: 75%;
+}
+
+div.column20 {
+    width: 20%;
+}
+
+div.column40 {
+    width: 40%;
+}
+
+div.column60 {
+    width: 60%;
+}
+
+div.column80 {
+    width: 80%;
+}
+
+/* Grid Spacing Styles */
+/*Applies the border box model to the div elements beloning to the classes: container, row, classes beginning with column, cell, and a elements nested within div elements belonging to the cell class. */
+div.container,
+div.row,
+div[class^="column"],
+div.cell,
+div.cell a {
+    box-sizing: border-box;
+}

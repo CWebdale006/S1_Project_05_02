@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 2
+   
+   Style Sheet for Costume Expressions Front Page
+   Author: Connor J Webdale
+   Date: 10.24.18
+   
+   Filename: ce_styles.css
+*/
+
+
+/* Window and Body Styles */
+/*Set the background color of the window to rgb(101,101,101). */
+html {
+    background-color: rgb(101, 101, 101);
+}
+
+/*Style rule for the body element that: sets the background color to white, sets the default font, centers the page by changing the top/bottom margin and setting the left/right to auto, and sets the width of the page body to 95%, ranging from 320 pixels to 960 pixels. */
+body {
+    background-color: white;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    min-width: 320px;
+    max-width: 960px;
+}
+
+/*#12   Display all images in the document as blocks with widths of 100%. */
+
+
+/*#13   Removes underlining from hypertext links within nav lists. */
+
+
+/*#19   Set the position property of the body element to relative */
+
+
+/* Body Header Styles */
+/*#14   Sets the backgound color of the body header to rgb(198,68,70) and the height to 40 pixels. */
+
+/*#15   Displays all list items within the nav ul list in the body header as blocks floated to the left, with a right margin of 20 pixels and the top/bottom padding of 10 pixels with a left-right padding of 0 pixels. */
+
+/*#16   Sets the font size of hypertext links in the body header nav list to .9 em with color of rgb(51,51,51) for visited and non-visited links. Change the text color to rgb(255,211,211) when the user hovers or activates those links. */
+
+/* DIV Container Styles */
+/*#17   Adds right/bottom padding of the div element with the id container to 8 pixels. */
+
+/*#18   For every element within a div element belonging to the cell class, create a style rule that displays the hypertext links as a block with a width of 100% and sets teh top/left padding to 8 pixels. */
+
+/* Footer Styles */
+/*#19   set the footer element with a position of absolute with a right/bottom coordinate of 8 pixels, text of the footer to rgb(143,33,36), right-aligned footer text, and font size to 2vmin. */
